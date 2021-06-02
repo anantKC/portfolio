@@ -19,7 +19,7 @@ h1,h2,h3,h4,h5,h6,a,span,p{
 }
 
 body{
-    background-color: var(--background-color) !important;
+    background-color: var(--background-color);
 }
 
 .nav_section .navbar-brand {
@@ -206,8 +206,9 @@ canvas.particles-js-canvas-el{
 /* ABOUT US */
 
 .about_section{
-    background-color:#282a39;
-    padding: 120px;
+    background-color:var(--background-color);
+    padding: 100px;
+    width: 100% !important;
 }
 
 .about_section #heading{
@@ -294,6 +295,14 @@ canvas.particles-js-canvas-el{
         font-size: 28px !important;
     }
 }
+@media (max-width:768px) and (min-width:500){
+    .about_section .about_me_right_section #txt{
+        font-size:8px;
+    }
+    .about_section #heading{
+        font-size: 18px impo !important;
+    }
+}
 
 .skills_section{
     padding: 250px 0px;
@@ -343,7 +352,7 @@ canvas.particles-js-canvas-el{
 /*PORTFOLIO */
 
 .portfolio_section {
-    background:#282a39;
+    background:var(--background-color);
     padding: 214px 0px;
 }
 
@@ -413,7 +422,7 @@ canvas.particles-js-canvas-el{
 
 .footer-area{
     padding: 20px 0px;
-    background:#282a39;
+    background:var(--background-color);
     border-top: 2px solid var(--bg-form-inputs);
     margin-bottom: -290px;
 }
@@ -460,4 +469,9 @@ canvas.particles-js-canvas-el{
     .footer-area .links{
         margin-bottom: 30px;
     }
+}
+
+.maprouter{
+    width:200;
+    height: 200;
 }
